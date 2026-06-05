@@ -1,5 +1,6 @@
-Project Title
+Projrct title
 Data Exploration
+
 
 Step 1: Data Structuring & Baseline Metrics
 
@@ -18,84 +19,74 @@ Price Range Classification
 I categorized products based on their unit price using an IF statement. Products with a unit price greater than $500, such as Laptop Pro, were classified as "High Price", while all other products were classified as "Standard Price".
 
 Excel Formula:
-
 =IF(G2 > 500, "High Price", "Standard Price")
 Text Manipulation Using Excel Functions
 
 To practice Excel text functions, I used the Order ID column to extract specific portions of the text.
-
 Day Column
-
 I extracted the first two characters from the Order ID, resulting in values such as "OR".
 
 Formula:
-
 =LEFT(A2, 2)
 Country Code Column
 
 I extracted the last two characters from the Order ID to generate sequential values ranging from 01 to 50.
-
 Formula:
-
 =RIGHT(A2, 2)
-
 or
-
 =VALUE(RIGHT(A2, 2))
+
 Month Column
-
 I extracted three characters starting from the fourth position of the Order ID, resulting in values such as "-10".
-
-Formula:
-
+Formula
 =MID(A2, 4, 3)
 
 Step 3: Summary Statistics & KPI Block
-
 I created a KPI summary table on the right side of the worksheet (Columns N and O, Rows 4 to 9) to analyze and summarize the Unit Price data.
 
 Total Price ($10,349.50)
-
 I calculated the total sum of all unit prices using the SUM function.
-
 Formula:
-
 =SUM(G2:G51)
+
 Average Price ($206.99)
-
 I calculated the average unit price across all products using the AVERAGE function.
-
 Formula:
-
 =AVERAGE(G2:G51)
+
 Minimum Price ($9.99)
-
 I identified the lowest-priced product using the MIN function.
-
 Formula:
-
 =MIN(G2:G51)
+
 Maximum Price ($1,299.99)
-
 I identified the highest-priced product using the MAX function.
-
 Formula:
-
 =MAX(G2:G51)
+
 Electronics Price ($7,179.81)
-
 I used the SUMIF function to calculate the total unit price of products belonging to the Electronics category.
-
 Formula:
-
 =SUMIF(E2:E51, "Electronics", G2:G51)
+
 Price Less Than $100 (34 Transactions)
-
 I used the COUNTIF function to determine how many transactions had a unit price below $100.
-
 Formula:
-
 =COUNTIF(G2:G51, "<100")
+
 Conclusion
 
 Through this process, I structured the dataset, created calculated fields, applied logical and text functions, and developed a KPI summary section to analyze pricing trends and product performance effectively.
+<img width="1483" height="232" alt="WhatsApp Image 2026-06-05 at 3 39 54 PM" src="https://github.com/user-attachments/assets/ca300a24-874b-42fe-8cdc-15cc5b20d8ed" />
+<img width="976" height="399" alt="WhatsApp Image 2026-06-05 at 3 41 51 PM" src="https://github.com/user-attachments/assets/db8c218f-705f-4f56-9cbc-e88dadcfaaf1" />
+<img width="958" height="384" alt="WhatsApp Image 2026-06-05 at 3 41 41 PM" src="https://github.com/user-attachments/assets/219f39ad-ce65-446a-8f88-add7101ae13d" />
+<img width="964" height="394" alt="WhatsApp Image 2026-06-05 at 3 41 27 PM" src="https://github.com/user-attachments/assets/a6154296-f871-45f1-860b-7aba00888a08" />
+<img width="1069" height="399" alt="WhatsApp Image 2026-06-05 at 3 41 16 PM" src="https://github.com/user-attachments/assets/7f87c150-71be-4e7c-bed5-eb2fcd3290b3" />
+<img width="963" height="588" alt="WhatsApp Image 2026-06-05 at 3 41 01 PM" src="https://github.com/user-attachments/assets/01b781ac-7d22-46a4-8611-422cc2f83aea" />
+<img width="1393" height="190" alt="WhatsApp Image 2026-06-05 at 3 40 48 PM" src="https://github.com/user-attachments/assets/f336aa5c-1b93-4ab3-979d-2baac1e647a7" />
+<img width="1231" height="192" alt="WhatsApp Image 2026-06-05 at 3 40 24 PM" src="https://github.com/user-attachments/assets/8cbd6a53-ba03-49ce-b268-7c97f40638c2" />
+<img width="1105" height="189" alt="formula assign snip" src="https://github.com/user-attachments/assets/2899e798-518c-493e-ac50-fd40596c0125" />
+<img width="979" height="405" alt="WhatsApp Image 2026-06-05 at 3 41 59 PM" src="https://github.com/user-attachments/assets/b94c3f83-6dbd-4dc9-8f2a-a3be215b4032" />
+
+
+          
